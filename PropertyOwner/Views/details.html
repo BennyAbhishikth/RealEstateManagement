@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Additional Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Additional Details</h2>
+        <form id="detailsForm" enctype="multipart/form-data">
+            <input type="hidden" id="userId" name="user_id">
+            <input type="file" style="width: 95%;
+                                        padding: 6px;
+                                    /* margin: 10px 0 20px 0; */
+                                        margin-left: 2.5%;
+                                        margin: 2.5%;
+                                        height: 40px;
+                                        display: inline-block;
+                                        border: 1px solid #ccc;
+                                        border-radius: 4px;
+                                        box-sizing: border-box;
+                                        font-size: 16px;" name="profile_picture" accept="image/*" required>
+            <input type="text" name="profession" placeholder="Profession" required>
+            <input type="text" name="residence" placeholder="Residence" required>
+            <input type="text" name="pan_number" placeholder="PAN Number" required>
+            <input type="number" style="width: 95%;
+                                        /* padding: 12px;
+                                        margin: 10px 0 20px 0; */
+                                        margin-left: 2.5%;
+                                        margin: 2.5%;
+                                        height: 40px;
+                                        display: inline-block;
+                                        border: 1px solid #ccc;
+                                        border-radius: 4px;
+                                        box-sizing: border-box;
+                                        font-size: 16px;" name="age" placeholder="Age" required>
+            <button type="submit">Submit</button>
+            <p id="detailsError" class="error"></p>
+        </form>
+    </div>
+    <script src="../Controller/details.js"></script>
+</body>
+</html>
